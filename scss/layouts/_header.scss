@@ -1,0 +1,152 @@
+ .header {
+    position: relative;
+    background-color: var(--main-white-color);
+    border-bottom: 1px solid rgba(236, 236, 236, 1);
+    display: flex;
+    align-items: center;
+    @media screen and (min-width:768px) {
+      height: 80px;
+    
+    }
+  
+    @media screen and (min-width:1200px) {
+      height: 80px;
+    
+    display: flex;
+    align-items: center;
+    
+    }
+  }
+  .logo,
+  .accent-logo {
+    color: var(--logo-col-one);
+    font-family: "Raleway";
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+  }
+  .logo {
+    
+    margin-right: 93px;
+  }
+  .accent-logo {
+    color: var(--accent);
+  }
+  
+  .navig-list {
+        display: none;
+        @media screen and (min-width:768px) {
+          display: flex;
+        
+        }
+    
+  }
+  .navig-list__nav-li {
+    margin-right: 50px;
+    &:last-child {
+      margin-right: 0;
+    }
+    
+  }
+  
+  .navig-list__nav-link {
+    position: relative;
+    color: var(--primary-text);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    color: var(--accent);
+  }
+  }
+  
+  
+  .active {
+    color: var(--accent);
+    &::after {
+      display: inline-block;
+      position: absolute;
+      content: "";
+      bottom: -13px;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: var(--accent);
+      border-radius: 2px;
+      text-align: center;
+      @media screen and (min-width:768px) {
+        bottom: -24px;
+      
+      }
+      @media screen and (min-width:1200px) {
+        bottom: -24px;
+      
+      }
+    }
+    
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    height: 60px;
+  }
+  
+  .navig {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .navig-list__header-link {
+    display: none;
+    @media screen and (min-width:768px) {
+      display: flex;
+    color: var(--secondary-text);
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    // margin-right: 30px;
+    margin-left: auto;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:last-child {
+      margin-top: 10px;
+      @media screen and (min-width:1200px) {
+       margin-top: 0;
+       margin-left: 30px;
+      
+      }
+    }
+    &:hover,
+    &:focus {
+      color: var(--accent);
+    }
+    
+    }
+    
+    
+  }
+  .mail,
+  .phone {
+    fill: currentColor;
+    margin-right: 10px;
+  }
+  .header-contact {
+    margin-left: auto;  
+    @media screen and (min-width:1200px) {
+      display: flex;
+    
+    }
+  }
+
+
