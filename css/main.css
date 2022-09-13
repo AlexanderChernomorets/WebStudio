@@ -423,8 +423,6 @@ img {
   height: 100vh;
   padding: 48px 40px;
   overflow-y: scroll;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
 }
 .mob-menu > .container {
   height: 100%;
